@@ -74,9 +74,80 @@ Sidebar */
 
 .sidebar {
   background: #000;
-  width: 320px;
+  width: 280px;
   height: 100%;
+  color: #fff;
 }
+
+      /* Logo */
+      .logo a {
+        display: block;
+        padding: 24px;
+      }
+
+      .logo a img {
+        width: 131px;
+      }
+
+      /* Side Menu */
+      .side-menu {
+        margin-bottom: 24px;
+      }
+
+      .side-menu ul li {
+        list-style: none;
+        line-height: 16px;
+      }
+
+      .side-menu ul li a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+        padding: 8px 24px;
+      }
+
+      .side-menu ul li a img {
+        vertical-align: middle;
+        display: inline-block;
+        margin-right: 8px;
+      }
+
+      /* Side Playlist */
+      .side-playlist {
+        padding: 0 24px;
+      }
+
+      .side-playlist ul li:first-child:before {
+        content: '+';
+        text-align: center;
+        line-height: 32px;
+        color: #000;
+        font-size: 32px;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background: #b3b3b3;
+        float: left;
+        margin-right: 8px;
+        position: relative;
+        top: 2px;
+        cursor: pointer;
+      }
+
+      .side-playlist ul {
+        margin-top: 12px;
+      }
+
+      .side-playlist ul li:first-child {
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+
+      .side-playlist ul li a {
+        padding: 12px 0;
+        color: #535353;
+      }
 
 
 /* ——————————————————————————————————————————————————
@@ -84,7 +155,7 @@ Content */
 
 .content {
   background: #212121;
-  width: calc(100% - 320px); /* Variare con width Sidebar */
+  width: calc(100% - 280px); /* Variare con width Sidebar */
   padding-top: 100px;
   flex: 5;
   overflow-y: scroll;
@@ -102,7 +173,7 @@ Content */
       /* Call to action */
       .cta {
         background: rgba(0,0,0,.8);
-        width: calc(100% - 320px); /* Variare con width Sidebar */
+        width: calc(100% - 280px); /* Variare con width Sidebar */
         height: 90px;
         top: 0;
         right: 0;
