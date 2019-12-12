@@ -28,6 +28,35 @@ body {
 
 .fixed { position: fixed }
 
+.flex-start { justify-content: flex-start!important; }
+.flex-start > .album-item { margin-right: 15px; }
+
+.circle { border-radius: 50%;}
+
+/* ——————————————————————————————————————————————————
+Typography */
+
+h1,h2,h3,h4,h5,h6 {
+  color: #fff;
+  font-weight: 900;
+}
+
+/* ——————————————————————————————————————————————————
+Buttons */
+
+.btn, a[class*="btn"] {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-white-outline {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
 /* ==================================================
 ——————————————————————————————————————————————————
 MAIN
@@ -67,7 +96,7 @@ Content */
 .content-wrapper {
   padding: 0px 24px 32px;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1800px;
 }
 
       /* Call to action */
@@ -81,19 +110,6 @@ Content */
         display: flex;
         justify-content: flex-end;
         align-items: center;
-      }
-
-      .btn, a[class*="btn"] {
-        display: inline-block;
-        padding: 12px 32px;
-        border-radius: 30px;
-        text-transform: uppercase;
-        text-decoration: none;
-      }
-
-      .btn-white-outline {
-        border: 1px solid #fff;
-        color: #fff;
       }
 
       /* Top Menu Content */
@@ -117,24 +133,66 @@ Content */
       }
 
       /* Albums */
+      .albums {
+        margin: 32px 0;
+      }
+
+      .albums h2 {
+        font-size: 36px;
+        margin: 24px 0;
+      }
+
+      .albums p {
+        margin-bottom: 24px;
+      }
+
       .albums-list {
         display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
+        justify-content: flex-start;
+        flex-wrap: wrap;
       }
 
       .album-item {
-        background: yellow;
         display: flex;
         flex-direction: column;
         align-items: center;
-        flex-basis: 16%;
+        flex-basis: calc((100% / 6) - 12.5px);
+        margin-bottom: 15px;
+        margin-right: 15px;
+      }
+
+      .albums-list div:nth-of-type(6n+0) {
+        margin-right: 0;
       }
 
       .album-item img {
         width: 100%;
       }
 
+      .album-item h3 {
+        margin: 12px 0 8px;
+      }
+
+      /* Fino a large desktops */
+      @media screen and (max-width: 1199px) {
+        .album-item {
+          flex-basis: calc((100% / 4) - 11.3px);
+          margin-right: 15px;
+        }
+        .albums-list div:nth-of-type(4n+0) {
+          margin-right: 0;
+        }
+      }
+
+      /* Fino a small desktops */
+      @media screen and (max-width: 768px) {
+        .album-item {
+          flex-basis: calc(50% - 7.5px);
+        }
+        .albums-list div:nth-of-type(2n+0) {
+          margin-right: 0;
+        }
+      }
 
 /* ==================================================
 ——————————————————————————————————————————————————
