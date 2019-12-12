@@ -89,6 +89,15 @@ Sidebar */
         width: 131px;
       }
 
+      .logo a.logo-mobile [class*="fa"] {
+        color: #fff;
+        font-size: 32px;
+      }
+
+      a.logo-mobile {
+        display: none;
+      }
+
       /* Side Menu */
       .side-menu {
         margin-bottom: 24px;
@@ -102,15 +111,29 @@ Sidebar */
       .side-menu ul li a {
         display: block;
         text-decoration: none;
-        color: #fff;
+        color: #535353;
         font-weight: 700;
-        padding: 8px 24px;
+        padding: 8px 24px 8px 0;
+      }
+
+      .side-menu ul li a:hover {
+        color: #fff;
       }
 
       .side-menu ul li a img {
-        vertical-align: middle;
+        vertical-align: -5px;
         display: inline-block;
-        margin-right: 8px;
+        padding: 0 8px 0 24px;
+      }
+
+      .side-menu ul li a.active img {
+        padding: 0 8px 0 21px;
+      }
+
+      .side-menu ul li a.active {
+        padding: 8px 24px 8px 0;
+        border-left: 3px solid #1db954;
+        color: #fff;
       }
 
       /* Side Playlist */
@@ -146,7 +169,35 @@ Sidebar */
 
       .side-playlist ul li a {
         padding: 12px 0;
-        color: #535353;
+      }
+
+      /* Fino a small desktops */
+      @media screen and (max-width: 768px) {
+        a.logo-mobile {
+          display: block;
+        }
+        .logo a:first-child,
+        .side-menu span,
+        .side-playlist {
+          display: none;
+        }
+        .sidebar {
+          width: auto;
+        }
+        .side-menu ul li a img {
+          padding: 0px;
+        }
+        .side-menu ul li a.active img {
+          padding: 8px 0;
+        }
+        .side-menu ul li a {
+          padding: 8px 0;
+          text-align: center;
+        }
+        .side-menu ul li a.active {
+          border:none;
+          padding: 8px 0;
+        }
       }
 
 
@@ -188,6 +239,7 @@ Content */
         display: flex;
         justify-content: center;
         margin-bottom: 24px;
+        flex-wrap: wrap;
       }
 
       nav ul.top-menu-content li {
@@ -201,6 +253,19 @@ Content */
         font-weight: 700;
         text-transform: uppercase;
         text-decoration: none;
+      }
+
+      nav ul.top-menu-content li a.active:after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 3px;
+        background: #1db954;
+        margin: 3px auto 0;
+      }
+
+      nav ul.top-menu-content li a:hover {
+        color: #fff;
       }
 
       /* Albums */
@@ -262,6 +327,10 @@ Content */
         }
         .albums-list div:nth-of-type(2n+0) {
           margin-right: 0;
+        }
+        .cta {
+          background: rgba(0,0,0,.8);
+          width: calc(100% - 80px); /* Variare con width Sidebar */
         }
       }
 
