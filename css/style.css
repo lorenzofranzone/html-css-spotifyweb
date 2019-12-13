@@ -464,7 +464,7 @@ FOOTER
         font-weight: 600;
       }
 
-      .player i[class*=fa-play] {
+      .player i[class*="fa-play"] {
         font-size: 36px;
       }
 
@@ -495,4 +495,24 @@ FOOTER
         display: flex;
         justify-content: flex-end;
         align-items: center;
+      }
+
+      .settings-icons {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      .settings i {
+        margin-right: 24px;
+      }
+
+      .settings i[class*="fa-volume"] {
+        margin-right: 16px;
+      }
+
+      .settings-icons .time-bar {
+        margin: 0;
+        min-width: 100px;
       }
