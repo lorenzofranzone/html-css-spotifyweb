@@ -48,6 +48,7 @@ Links */
 
 a {
   text-decoration: none;
+  transition: all .5s;
 }
 
 a:hover, a.player-ico:hover { color: #fff; }
@@ -68,6 +69,7 @@ Buttons */
   border-radius: 30px;
   text-transform: uppercase;
   text-align: center;
+  transition: all .5s;
 }
 
 .btn-white-outline {
@@ -321,6 +323,10 @@ header {
   align-items: center;
 }
 
+header a.btn-white-outline:hover {
+  transform: scale(1.1);
+}
+
 /* ——————————————————————————————————————————————————
 Main */
 
@@ -382,6 +388,7 @@ nav.list-general ul li a.active:after {
   flex-basis: calc((100% / 6) - 12.5px);
   margin-bottom: 15px;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .albums-list div:nth-of-type(6n+0) {
@@ -392,9 +399,51 @@ nav.list-general ul li a.active:after {
   width: 100%;
 }
 
+.album-item .album-cover {
+  position: relative;
+}
+
+.album-item .album-cover:before {
+  content: '';
+  background: rgba(0,0,0,.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  display: none;
+}
+
+.album-item .album-cover:after {
+  content: '\f144';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  font-size: 56px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.album-item:hover .album-cover:before,
+.album-item:hover .album-cover:after {
+  display: block;
+}
+
 .album-item h3 {
   color: #fff;
   margin: 12px 0 8px;
+}
+
+.album-item h3 a {
+  color: #fff;
+  margin: 12px 0 8px;
+  display: block;
+}
+
+.album-item h3 a:hover {
+  text-decoration: underline;
 }
 
 /* ——————————————————————————————————————————————————
