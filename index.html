@@ -8,6 +8,9 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/aside.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
 
@@ -15,213 +18,204 @@
   Wrapper -->
   <div class="wrapper">
 
-    <!-- ——————————————————————————————————————————————————
-    Main -->
-    <section class="main">
+    <!-- Navbar -->
+    <aside>
 
-      <!-- Sidebar -->
-      <section class="sidebar">
+      <!-- Logo -->
+      <div class="logo">
+        <img class="logo-desk" src="img/logo.svg" alt="Logo Spotify">
+        <img class="logo-smart" src="img/logo-small.svg" alt="Icona Spotify">
+      </div> <!-- / Logo -->
 
-        <!-- Logo -->
-        <div class="logo">
-          <a href="#"><img src="img/logo.png" alt="Logo Spotify"></a>
-          <a class="logo-mobile" href="#"><i class="fab fa-spotify"></i></a>
+      <!-- Main Menu -->
+      <ul class="main-menu">
+        <li><a class="active" href="#"><img src="img/home.svg" alt="Home Icon"><span>Home</span></a></li>
+        <li><a href="#"><img src="img/search.svg" alt="Search Icon"><span>Cerca</span></a></li>
+        <li><a href="#"><img src="img/libreria.svg" alt="Library Icon"><span>La tua libreria</span></a></li>
+      </ul> <!-- / Main Menu -->
+
+      <!-- Playlist -->
+      <div class="playlist">
+        <h3>Playlist</h3>
+        <ul>
+          <li><a href="#">Crea Playlist</a></li>
+          <li><a href="#">Heavy Metal</a></li>
+          <li><a href="#">Thrash Metal</a></li>
+          <li><a href="#">Death Metal</a></li>
+          <li><a href="#">Metalcore</a></li>
+          <li><a href="#">Hardcore Punk</a></li>
+          <li><a href="#">Punk Rock</a></li>
+          <li><a href="#">Rock</a></li>
+          <li><a href="#">Alternative</a></li>
+        </ul>
+      </div> <!-- / Playlist -->
+
+      <!-- Navbar Footer -->
+      <section class="navbar-footer">
+        <a class="download" href="#"><img src="img/download.svg" alt="Download Icon"><span>Installa app</span></a>
+        <h3><a href="#"><img class="user-profile" src="img/profile.svg" alt="User Icon"><span>John Doe<span></a></h3>
+      </section> <!-- / Navbar Footer -->
+
+    </aside> <!-- / Navbar -->
+
+    <!-- Main Content -->
+    <main>
+
+      <!-- Header -->
+      <header class="fixed">
+        <a href="#" class="btn btn-white-outline">Effettua l'upgrade</a>
+      </header> <!-- / Header -->
+
+      <!-- List General -->
+      <nav class="list-general">
+        <ul>
+          <li><a class="active" href="#">In evidenza</a></li>
+          <li><a href="#">Podcast</a></li>
+          <li><a href="#">Classifiche</a></li>
+          <li><a href="#">Generi e mood</a></li>
+          <li><a href="#">Nuove uscite</a></li>
+          <li><a href="#">Scopri</a></li>
+        </ul>
+      </nav> <!-- / List General -->
+
+      <!-- Recently played -->
+      <section class="albums">
+        <h2>Recently played</h2>
+        <div class="albums-list">
+          <!-- Album 1 -->
+          <div class="album-item">
+            <img src="img/metal_lifting.jpg" alt="Heavy Metal Mix">
+            <h3>Heavy Metal</h3>
+            <p>Subtitle</p>
+          </div>
+          <!-- Album 2 -->
+          <div class="album-item">
+            <img src="img/stranger.jpeg" alt="Stranger Things">
+            <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+            <p>Kyle Dixon & Michael Stein</p>
+          </div>
+          <!-- Album 3 -->
+          <div class="album-item">
+            <img src="img/aquietplace.jpeg" alt="A quiet place">
+            <h3>A quiet place</h3>
+            <p>Subtitle</p>
+          </div>
+          <!-- Album 4 -->
+          <div class="album-item">
+            <img src="img/split.jpeg" alt="Split">
+            <h3>Split</h3>
+            <p>Subtitle</p>
+          </div>
+          <!-- Album 5 -->
+          <div class="album-item">
+            <img src="img/cure.jpeg" alt="A cure for wellness">
+            <h3>A cure for wellness</h3>
+            <p>Subtitle</p>
+          </div>
+          <!-- Album 6 -->
+          <div class="album-item">
+            <img src="img/sinister.jpeg" alt="Sinister">
+            <h3>Sinister</h3>
+            <p>Subtitle</p>
+          </div>
+        </div> <!-- / Albums List -->
+      </section> <!-- / Albums -->
+
+      <!-- Created for -->
+      <section class="albums">
+        <h2>Creato per John Doe</h2>
+        <p>Più ascolti, più accurati saranno i suggerimenti</p>
+        <div class="albums-list">
+          <!-- Album 1 -->
+          <div class="album-item">
+            <img src="img/radar.jpeg" alt="">
+            <h3>Release Radar</h3>
+          </div>
+          <!-- Album 2 -->
+          <div class="album-item">
+            <img src="img/mixdaily.jpeg" alt="">
+            <h3>Daily Mix</h3>
+          </div>
         </div>
+      </section>
 
-        <!-- Side Menu -->
-        <div class="side-menu">
-          <ul>
-            <li><a class="active" href="#"><img src="img/home.svg" alt="Home"><span class="hide">Home</span></a></li>
-            <li><a href="#"><img src="img/search.svg" alt="Cerca"><span>Cerca</span></a></li>
-            <li><a href="#"><img src="img/library.svg" alt="Libreria"><span>La tua Libreria</span></a></li>
-          </ul>
+      <!-- Popolar artists -->
+      <section class="albums">
+        <h2>Artisti più popolari</h2>
+        <p>Più ascolti, più accurati saranno i suggerimenti</p>
+        <div class="albums-list">
+          <!-- Album 1 -->
+          <div class="album-item">
+            <img src="img/youg.jpeg" alt="">
+            <h3>Lana Del Rey</h3>
+          </div>
+          <!-- Album 2 -->
+          <div class="album-item">
+            <img src="img/einaudi.jpeg" alt="">
+            <h3>Ludovico Einaudi</h3>
+          </div>
         </div>
+      </section>
 
-        <!-- Playlist -->
-        <div class="side-menu side-playlist">
-          <h3>Playlist</h3>
-          <ul>
-            <li><a href="#">Crea Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-          </ul>
-        </div>
-
-        <!-- Sidebar Footer -->
-        <div class="sidebar-footer">
-          <a class="download" href="#"><span>Installa app</span></a>
-          <h3><span>John Doe<span></h3>
-        </div>
-
-      </section> <!-- / Sidebar -->
-
-      <!-- Content -->
-      <section class="content">
-        <div class="cta fixed">
-          <a href="#" class="btn btn-white-outline">Effettua l'upgrade</a>
-        </div>
-
-        <div class="content-wrapper">
-          <!-- Nav Menu Content -->
-          <nav>
-            <ul class="top-menu-content">
-              <li><a class="active" href="#">In evidenza</a></li>
-              <li><a href="#">Podcast</a></li>
-              <li><a href="#">Classifiche</a></li>
-              <li><a href="#">Generi e mood</a></li>
-              <li><a href="#">Nuove uscite</a></li>
-              <li><a href="#">Scopri</a></li>
-            </ul>
-          </nav>
-
-          <!-- Recently played -->
-          <section class="albums">
-            <h2>Titolo</h2>
-            <div class="albums-list">
-              <!-- Album 1 -->
-              <div class="album-item">
-                <img src="img/albums/metallica-master-of-puppets.png" alt="">
-                <h3>Titolo Album</h3>
-                <p>Sottotitolo Album</p>
-              </div>
-              <!-- Album 2 -->
-              <div class="album-item">
-                <img src="img/albums/metallica-master-of-puppets.png" alt="">
-                <h3>Titolo Album</h3>
-                <p>Sottotitolo Album</p>
-              </div>
-              <!-- Album 3 -->
-              <div class="album-item">
-                <img src="img/albums/metallica-master-of-puppets.png" alt="">
-                <h3>Titolo Album</h3>
-                <p>Sottotitolo Album</p>
-              </div>
-              <!-- Album 4 -->
-              <div class="album-item">
-                <img src="img/albums/metallica-master-of-puppets.png" alt="">
-                <h3>Titolo Album</h3>
-                <p>Sottotitolo Album</p>
-              </div>
-              <!-- Album 5 -->
-              <div class="album-item">
-                <img src="img/albums/metallica-master-of-puppets.png" alt="">
-                <h3>Titolo Album</h3>
-                <p>Sottotitolo Album</p>
-              </div>
-              <!-- Album 6 -->
-              <div class="album-item">
-                <img src="img/albums/metallica-master-of-puppets.png" alt="">
-                <h3>Titolo Album</h3>
-                <p>Sottotitolo Album</p>
-              </div>
-            </div> <!-- / Albums List -->
-          </section> <!-- / Albums -->
-
-          <!-- Creato per John Doe -->
-          <section class="albums">
-            <h2>Titolo</h2>
-            <p>Lorem ipsum dolor sit amet</p>
-            <div class="albums-list flex-start">
-              <!-- Album 1 -->
-              <div class="album-item">
-                <img src="img/albums/metallica-master-of-puppets.png" alt="">
-                <h3>Titolo Album</h3>
-                <p>Sottotitolo Album</p>
-              </div>
-              <!-- Album 2 -->
-              <div class="album-item">
-                <img src="img/albums/metallica-master-of-puppets.png" alt="">
-                <h3>Titolo Album</h3>
-                <p>Sottotitolo Album</p>
-              </div>
-            </div> <!-- / Albums List -->
-          </section> <!-- / Albums -->
-
-          <!-- Artisti più popolari -->
-          <section class="albums">
-            <h2>Titolo</h2>
-            <p>Lorem ipsum dolor sit amet</p>
-            <div class="albums-list flex-start">
-              <!-- Album 1 -->
-              <div class="album-item">
-                <img class="circle" src="img/albums/metallica-master-of-puppets.png" alt="">
-                <h3>Titolo Album</h3>
-                <p>Sottotitolo Album</p>
-              </div>
-              <!-- Album 2 -->
-              <div class="album-item circle">
-                <img class="circle" src="img/albums/metallica-master-of-puppets.png" alt="">
-                <h3>Titolo Album</h3>
-                <p>Sottotitolo Album</p>
-              </div>
-            </div> <!-- / Albums List -->
-
-        </div> <!-- / Content Wrapper -->
-
-      </section> <!-- / Content -->
-
-    </section> <!-- / Main Section -->
-
-    <!-- ——————————————————————————————————————————————————
-    Footer -->
-    <section class="footer fixed">
-
-      <!-- Listening -->
-      <div class="listening">
-
-        <img src="img/albums/metallica-master-of-puppets.png" alt="">
-
-        <div class="current-artist">
-          <a href="#"><h4>Metallica</h4></a>
-          <p><a href="#">Master of puppets</a></p>
-        </div>
-
-        <div class="listening-like">
-          <a href="#"><i class="far fa-heart"></i></a>
-          <a href="#"><i class="far fa-folder"></i></a>
-        </div>
-
-      </div>
-
-      <!-- Player -->
-      <div class="player">
-
-        <div class="player-icons">
-          <i class="fas fa-random"></i>
-          <i class="fas fa-step-backward"></i>
-          <i class="fas fa-play-circle"></i>
-          <i class="fas fa-step-forward"></i>
-          <i class="fas fa-redo-alt"></i>
-        </div>
-
-        <div class="player-time">
-          <p>1:00</p>
-          <div class="time-bar"></div>
-          <p>3:00</p>
-        </div>
-
-      </div>
-
-      <!-- Settings -->
-      <div class="settings">
-
-        <div class="settings-icons">
-          <i class="fas fa-list"></i>
-          <i class="fas fa-desktop"></i>
-          <i class="fas fa-volume-up"></i>
-          <div class="time-bar"></div>
-        </div>
-
-      </div>
-    </section> <!-- / Footer -->
+    </main> <!-- / Main -->
 
   </div> <!-- / Wrapper -->
+
+  <!-- ——————————————————————————————————————————————————
+  Footer -->
+  <footer>
+
+    <!-- Now Playing -->
+    <div class="now-playing">
+
+      <!-- Song -->
+      <img src="img/sinister.jpeg" alt="Sinister">
+      <div class="current-track">
+        <h4><a href="#">Title Track</a></h4>
+        <p><a href="#">Sinister</a></p>
+      </div>
+
+      <div class="track-like">
+        <a class="player-ico" href="#"><i class="far fa-heart"></i></a>
+        <a class="player-ico" href="#"><i class="far fa-folder"></i></a>
+      </div>
+
+    </div> <!-- / Now Playing -->
+
+    <!-- Player -->
+    <div class="player">
+
+      <div class="player-icons">
+        <a class="player-ico" href="#"><i class="fas fa-random"></i></a>
+        <a class="player-ico" href="#"><i class="fas fa-step-backward"></i></a>
+        <a class="player-ico ico-play-pause" href="#"><i class="fas fa-pause"></i></a>
+        <a class="player-ico" href="#"><i class="fas fa-step-forward"></i></a>
+        <a class="player-ico" href="#"><i class="fas fa-redo-alt"></i></a>
+      </div>
+
+      <div class="player-time">
+        <p>1:00</p>
+        <div class="time-bar">
+          <div class="time-current"><span></span></div>
+        </div>
+        <p>3:00</p>
+      </div>
+
+    </div> <!-- / Player -->
+
+    <!-- Settings -->
+    <div class="settings">
+      <a class="player-ico" href="#"><i class="fas fa-list"></i></a>
+      <a class="player-ico" href="#"><i class="fas fa-desktop"></i></a>
+      <div class="player-time">
+        <a class="player-ico" href="#"><i class="fas fa-volume-up"></i></a>
+        <div class="time-bar">
+          <div class="time-current"><span></span></div>
+        </div>
+      </div>
+    </div> <!-- / Settings -->
+
+  </footer>
 
 </body>
 </html>
