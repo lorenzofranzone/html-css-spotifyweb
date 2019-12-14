@@ -41,7 +41,7 @@ body {
   padding-bottom: 90px; /* Variare con height Footer */
 }
 
-.fixed { position: fixed; }
+.fixed { position: fixed; z-index: 2;}
 
 /* ——————————————————————————————————————————————————
 Links */
